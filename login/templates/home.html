@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codevocado - Online Exam & Assessment Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="script" href="{{ url_for('static', filename='script.js') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+  <a href="{{ url_for('home') }}" class="logo-section">
+    <img src="{{ url_for('static', filename='logo.png') }}" 
+         alt="Codevocado Logo" 
+         class="logo-img">
+            <div class="brand-text">
+                <h1>Codevocado</h1>
+                <!---<p>Assessment Platform</p>--->
+            </div>
+        </a>
+
+        <div class="nav-buttons">
+            <!---<button class="btn btn-demo">Book Demo</button>--->
+<a href="login" class="btn btn-login">Login</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="dots dot-1"></div>
+        <div class="dots dot-2"></div>
+        <div class="dots dot-3"></div>
+        <div class="dots dot-4"></div>
+        <div class="dots dot-5"></div>
+        <div class="dots dot-6"></div>
+
+        <div class="avocado-logo">
+  <img src="{{ url_for('static', filename='logo.png') }}"
+       alt="Codevocado Logo"
+       class="hero-logo floating">
+</div>
+
+
+
+        
+        <h1 class="hero-title">Secure Online<br>Exams!</h1>
+        
+        <p class="hero-subtitle">Advanced assessment platform for students and educators.</p>
+
+        <div class="cta-buttons">
+            <button class="btn-primary">Get Started Free</button>
+            <!---<button class="btn-secondary">Watch Demo</button>-->
+        </div>-
+    </section>
+    <section class="value-prop">
+  <div class="value-container">
+
+    <h2>
+      Cut assessment costs and time —<br>
+      discover skilled talent with<br>
+      <span class="highlight">Codevocado</span>
+    </h2>
+
+    <div class="value-points">
+      <span>• Assess <strong>Smarter.</strong></span>
+      <span>• Hire <strong>Faster.</strong></span>
+    </div>
+
+    <img src="{{ url_for('static', filename='talent.png') }}" alt="Talent Illustration" class="value-image">
+
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+   <section class="features">
+    <h2 class="section-title">Powerful Features</h2>
+    <p class="section-subtitle">
+        Everything you need to conduct secure and effective online assessments
+    </p>
+
+    <div class="features-grid">
+        
+
+        <!-- Card 2 -->
+        <div class="feature-card">
+            <div class="feature-icon">⏱️</div>
+            <h3>Timed Assessments</h3>
+            <p>
+                Customizable time limits with automatic submission
+                and real-time progress.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Instant Results</h3>
+            <p>
+                Automated scoring with detailed analytics
+                and performance insights.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- How It Works Section -->
+   <section class="how-wrapper">
+  <div class="how-top">
+    <div class="how-text">
+      <h2>How Codevocado<br>Works</h2>
+      <p>
+        Our secure examination platform provides a comprehensive solution
+        for online assessments with advanced proctoring and anti-cheat measures.
+      </p>
+      <p>
+        Students take exams in a monitored environment while administrators
+        get real-time insights and detailed analytics.
+      </p>
+    </div>
+
+    <!----<div class="stats-cards">
+      <div class="stat-card">
+        <h3>1000+</h3>
+        <p>EXAMS CONDUCTED</p>
+      </div>
+      <div class="stat-card">
+        <h3>5000+</h3>
+        <p>STUDENTS ASSESSED</p>
+      </div>
+      <div class="stat-card">
+        <h3>99.9%</h3>
+        <p>UPTIME</p>
+      </div>
+    </div>
+  </div>--->
+</section>
+<!-- Who Can Use Codevocado Section -->
+<section class="who-can-use">
+  <h2 class="section-title">Who Can Use Codevocado?</h2>
+
+  <div class="use-grid">
+    <!-- Students Card -->
+    <div class="use-card">
+      <div class="use-icon">🎓</div>
+      <h3>Students</h3>
+      <p>
+        Take secure online exams with real-time monitoring
+        and instant feedback on your performance.
+      </p>
+    </div>
+
+    <!-- Administrators Card -->
+    <div class="use-card">
+      <div class="use-icon">👨‍🏫</div>
+      <h3>Administrators</h3>
+      <p>
+        Create and manage exams, monitor student activity,
+        and analyze results with detailed reports.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Stats Section (Under Who Can Use) -->
+<!---<section class="stats-lite">
+  <div class="stats-grid-lite">
+    <div class="stat-card-lite">
+      <h3>98%</h3>
+      <p>CLIENT SATISFACTION</p>
+    </div>
+
+    <div class="stat-card-lite">
+      <h3>500+</h3>
+      <p>ORGANIZATIONS TRUST US</p>
+    </div>
+
+    <div class="stat-card-lite">
+      <h3>2M+</h3>
+      <p>ASSESSMENTS COMPLETED</p>
+    </div>
+  </div>
+</section>--->
+<!-- Create Assessment Tests Section -->
+<section class="create-assessment">
+  <div class="create-content">
+    <h2>Create new Tests</h2>
+
+    <p class="create-desc">
+      Design, customize, and publish secure online assessments.<br>
+      Administrators can create comprehensive tests and make them
+      available for students and candidates.
+    </p>
+
+    <div class="create-buttons">
+      <button class="btn-create-primary">Create New Test</button>
+      <button class="btn-create-secondary">Manage Assessments</button>
+    </div>
+
+    <div class="create-features">
+      <span>✔ Question Bank Management</span>
+      <span>✔ Test Scheduling & Publishing</span>
+      <span>✔ Candidate Access Control</span>
+      <span>✔ Real-time Monitoring</span>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+   <!-- Brand -->
+<div class="footer-brand">
+  <img src="{{ url_for('static', filename='logo.png') }}"
+       alt="Codevocado Logo"
+       class="footer-logo">
+  <h3>Codevocado</h3>
+  <p>
+
+        Leading the future of secure online assessments with advanced
+        proctoring technology and comprehensive exam management solutions.
+      </p>
+    </div>
+
+    <!-- For Students -->
+    <div class="footer-column">
+      <h4>For Students</h4>
+      <ul>
+        <li><a href="#">Practice Tests</a></li>
+        <li><a href="#">Study Materials</a></li>
+        <li><a href="#">Results Dashboard</a></li>
+        <li><a href="#">Exam Schedule</a></li>
+      </ul>
+    </div>
+
+    <!-- For Educators -->
+    <div class="footer-column">
+      <h4>For Educators</h4>
+      <ul>
+        <li><a href="#">Create Exams</a></li>
+        <li><a href="#">Monitor Sessions</a></li>
+        <li><a href="#">Analytics & Reports</a></li>
+        <li><a href="#">Question Bank</a></li>
+      </ul>
+    </div>
+
+    <!-- Platform -->
+    <div class="footer-column">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="#">Security Features</a></li>
+        <li><a href="#">API Documentation</a></li>
+        <li><a href="#">System Status</a></li>
+        <li><a href="#">Integration Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact Support</a></li>
+        <li><a href="#">Training Resources</a></li>
+        <li><a href="#">Community Forum</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Codevocado. All rights reserved. Secure assessments for the digital age.</p>
+
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+    
+</body>
+</html>
